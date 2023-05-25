@@ -12,11 +12,26 @@
 <body>
 <header>
     <h1>Hi, I'm Alvin</h1>
-    <nav></nav>
+    <nav>
+        <ul>
+            <li>
+                <a href="#about">About Me</a>
+            </li>
+            <li>
+                <a href="#proj">My Projects</a>
+            </li>
+            <li>
+                <a href="#gallery">My Gallery</a>
+            </li>
+            <li>
+                <a href="#contacts">Contact Me!</a>
+            </li>
+        </ul>
+    </nav>
     <hr>
 </header>
     <main>
-        <article>
+        <article id="about">
             <h2>About Me</h2>
             <h3>My Household Background</h3>
             <p>
@@ -156,7 +171,7 @@
                 <br>I am somewhat interested in video editing, but I lack the motivation to learn it right now.</p>
         </article>
         <hr>
-        <article>
+        <article id="proj">
             <h2>My Projects</h2>
             <p>I have some mini-projects that I have completed and uploaded on GitHub.They are far from perfect but I tried(TailwindCSS is such a pain...)</p>
             <dl>
@@ -169,7 +184,7 @@
             </dl>
         </article>
         <hr>
-        <article>
+        <article id="gallery">
             <h2>My Gallery</h2>
             <figure>
                 <img src="img/me.jpg" alt="Me" title="This Is Me" width="477" height="600">
@@ -200,7 +215,7 @@
                 <figcaption>Oops😬😬</figcaption>
             </figure>
         </article>
-        <article>
+        <article id="contacts">
             <h2>Contact Me!</h2>
             <form action="https://httpbin.org/get" method="get">
                 <fieldset>
@@ -219,6 +234,8 @@
                     <textarea name="message" id="message" cols="30" rows="10"></textarea>
                 </p>
             </fieldset>
+            <br>
+            <button type="submit">Submit</button>
             </form>
         </article>
     </main>
