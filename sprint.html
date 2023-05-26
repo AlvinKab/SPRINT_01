@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" sm:scroll-smooth>
+<html lang="en" class="sm:scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,11 +7,26 @@
     <meta name="author" content="Alvin Kabutu">
     <meta name="description" content="Learn more about me!">
     <link rel="icon" href="img/logo.jpg">
+    <link rel="stylesheet" href="sprint.css">
     <title>Alvin Kabutu</title>
 </head>
 <body>
 <header>
-    <h1>Hi, I'm Alvin</h1>
+    <section class="nav-button-line">
+    <button class="nav-button">
+        <div class="nav-icon"></div>
+    </button>
+</section>
+<h1>
+    Hi, I'm 
+    <br><div class="name-animate">
+    <span>A</span>
+    <span>L</span>
+    <span>V</span>
+    <span>I</span>
+    <span>N</span>
+</div>
+</h1>
     <nav>
         <ul>
             <li>
@@ -33,6 +48,12 @@
     <main>
         <article id="about">
             <h2>About Me</h2>
+            <aside>
+                <details>
+                    <summary>What is your full name?</summary>
+                    <p>My full name is Alvin Kabutu Mwangi.</p>
+                </details>
+            </aside>
             <h3>My Household Background</h3>
             <p>
                 <br>I was born on the 17th of December 2005 to two loving parents at the Nairobi West Hospital.
@@ -248,6 +269,7 @@
         <p>No YouTube Channel Yet :P</p>
         <p>&copy; Alvin Kabutu</p>
         <p>All Rights Reserved</p>
+        <p><a href="#">Back To Top</a></p>
     </footer>   
 </body>
 </html>
