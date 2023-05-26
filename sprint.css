@@ -16,7 +16,10 @@ html {
 :root {
  --NAV-ICON-COLOR: #000;
  --NAV-ICON-BF-AF-COLOR: teal;
- --LINK-COLOR: magenta;
+ --LINK-COLOR: turquoise;
+ --BORDER-COLOR: indigo;
+
+ --BORDER-RADIUS: 2.5rem;
 }
 
 header {
@@ -166,4 +169,29 @@ span:nth-of-type(5) {
 
 body {
     background-image: linear-gradient(rgba(255,255,0,0.5),rgba(0,0,255,0.5));
+}
+
+table,
+th,
+td,
+tr,
+caption {
+    border: 2px solid var(--BORDER-COLOR);
+    border-collapse: collapse;
+    padding: 1rem;
+}
+
+caption {
+    border-top-left-radius: var(--BORDER-RADIUS);
+    border-top-right-radius: var(--BORDER-RADIUS);
+}
+
+tfoot {
+    text-align: center;
+    font-style: italic;
+}
+
+tfoot td {
+    border-bottom-left-radius: var(--BORDER-RADIUS);
+    border-bottom-right-radius: var(--BORDER-RADIUS);
 }
