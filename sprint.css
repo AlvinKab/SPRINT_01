@@ -18,6 +18,8 @@ html {
  --NAV-ICON-BF-AF-COLOR: teal;
  --LINK-COLOR: turquoise;
  --BORDER-COLOR: indigo;
+ --LINK-COLOR-VSTD: magenta;
+ --LINK-COLOR-2: teal;
 
  --BORDER-RADIUS: 2.5rem;
 }
@@ -26,7 +28,7 @@ header {
     background-image: url("img/background_image.png");
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 102vh;
     min-height: calc(5rem - 40vh); 
     min-width:100%;
     text-align: center;
@@ -169,6 +171,9 @@ span:nth-of-type(5) {
 
 body {
     background-image: linear-gradient(rgba(255,255,0,0.5),rgba(0,0,255,0.5));
+    font-size: 1.25em;
+    display: block;
+    min-width: 100%;
 }
 
 table,
@@ -194,4 +199,26 @@ tfoot {
 tfoot td {
     border-bottom-left-radius: var(--BORDER-RADIUS);
     border-bottom-right-radius: var(--BORDER-RADIUS);
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.proj {
+    height: 100vh;
+    line-height: 75px;
+}
+
+.proj__dt a:any-link{
+    color: var(--LINK-COLOR-2);
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.proj__dt a:hover,
+.proj__dt a:focus {
+    transform: scale(1.2);
+    transition: all 0.3s;
 }
