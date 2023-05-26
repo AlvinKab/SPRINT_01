@@ -207,7 +207,7 @@ h2 {
 }
 
 .proj {
-    height: 100vh;
+    min-height: 100vh;
     line-height: 75px;
 }
 
@@ -221,4 +221,9 @@ h2 {
 .proj__dt a:focus {
     transform: scale(1.2);
     transition: all 0.3s;
+}
+
+.gallery__pics{
+    display: flex;
+    flex-flow: row nowrap;
 }
