@@ -259,12 +259,17 @@ h2 {
     border-radius: var(--BORDER-RADIUS);
 }
 
+.hr {
+    border-color: transparent;
+}
+
 footer {
     background-image: url(img/background_image2.png);
     min-height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
     font-size: 1.5em;
+    min-width: 100%;
 }
 
 .footer__header {
