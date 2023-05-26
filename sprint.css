@@ -20,8 +20,15 @@ html {
  --BORDER-COLOR: indigo;
  --LINK-COLOR-VSTD: magenta;
  --LINK-COLOR-2: teal;
+ --BG-COLOR: linear-gradient(rgba(255,255,0,0.5),rgba(0,0,255,0.5));
 
  --BORDER-RADIUS: 2.5rem;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --BG-COLOR: linear-gradient(rgba(255,0,255,0.5), rgba(0,0,255,0.5));
+    }
 }
 
 header {
@@ -170,10 +177,10 @@ span:nth-of-type(5) {
 }
 
 body {
-    background-image: linear-gradient(rgba(255,255,0,0.5),rgba(0,0,255,0.5));
+    background-image: var(--BG-COLOR);
     font-size: 1.25em;
     display: block;
-    min-width: 100%;
+    min-width: 80%;
 }
 
 table,
@@ -226,4 +233,9 @@ h2 {
 .gallery__pics{
     display: flex;
     flex-flow: row nowrap;
+}
+
+.ordered {
+    list-style: lower-roman;
+    list-style-type: lower-roman;
 }
