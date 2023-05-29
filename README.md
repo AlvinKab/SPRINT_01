@@ -1,3 +1,2 @@
 # SPRINT_01
-There were more han 10 commits in the HTML file but I had to rename it so that the webpage could load.
-The HTML file was previously called sprint.html but GitHub pages required that I have an index.html file.
+I had also forgotten to mention that I found TailwindCSS to be very inefficient since most of what could be done in TailwindCSS could be done in regular CSS just as easily such as implementation of dark mode.
